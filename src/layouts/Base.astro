@@ -1,12 +1,13 @@
 ---
 interface Props {
   title: string;
-};
+}
 
 const { title } = Astro.props;
 
-import Navbar from '@components/Navbar.astro';
+import Navbar from "@components/Navbar.astro";
 ---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,8 +24,11 @@ import Navbar from '@components/Navbar.astro';
     </style>
   </head>
 
-	<body>
-    <Navbar></Navbar>
-    <slot />
-	</body>
+  <body>
+    <Navbar />
+
+    <div class='max-w-5xl mx-auto mt-16'>
+      <slot />
+    </div>
+  </body>
 </html>
