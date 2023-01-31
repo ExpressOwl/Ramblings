@@ -1,9 +1,10 @@
-interface BlogPostFrontMatter {
+interface BlogPostFrontmatter {
   title: string;
   date: string;
+  tags?: string[];
   draft?: boolean;
 }
 
 export type {
-  BlogPostFrontMatter
+  BlogPostFrontmatter
 }

@@ -5,8 +5,8 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@types": ["src/types*"],
-      "@utils": ["src/utils*"]
+      "@types": ["src/types"],
+      "@utilities": ["src/utilities"]
     }
   }
 }

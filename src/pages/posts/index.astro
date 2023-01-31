@@ -1,12 +1,12 @@
 ---
 import type { Markdowninstance } from 'astro';
 import Base from "@layouts/Base.astro";
-import type { BlogPostFrontMatter } from "@types";
+import type { BlogPostFrontmatter } from "@types";
 import { formatDate } from "src/utilities";
 
-let posts = await Astro.glob<BlogPostFrontMatter>('./*.md')
+let posts = await Astro.glob<BlogPostFrontmatter>('./*.md');
 
-type Post = Markdowninstance<BlogPostFrontMatter>;
+type Post = Markdowninstance<BlogPostFrontmatter>;
 
 posts = posts.sort((a: Post, b: Post): number => {
   if (a.frontmatter.date > b.frontmatter.date) {
@@ -19,6 +19,10 @@ posts = posts.sort((a: Post, b: Post): number => {
 
   return 0;
 });
+
+if (import.meta.env.PROD) {
+  posts = posts.filter(post => !post.frontmatter.draft)
+}
 ---
 <Base title='Blog Posts'>
   <h1 class='mb-8 text-6xl'>Blog Posts</h1>

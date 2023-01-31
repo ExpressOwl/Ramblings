@@ -2,6 +2,7 @@
 layout: '../../layouts/BlogPost.astro'
 title: Blah Blah Blah
 date: 2023-01-30
+tags: ['Opinion', 'Game']
 ---
 
 When you consider the main purpose of a review is to answer the question of whether something is actually as good as it appears to be in ads and previews before you decide to spend your time and money on it, there’s no greater waste of everybody’s time and effort than telling people that something they’ve never heard of isn’t good. This is what I tell people when they ask why so few reviews on IGN end up on the bottom half of that scale. There are a few reasons for this and none of them have to do with a reluctance to give low scores when they’re warranted.
