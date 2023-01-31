@@ -1,0 +1,32 @@
+---
+const items = [
+  {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "Blog",
+    path: "/blog",
+  },
+  {
+    title: "About",
+    path: "/about",
+  },
+];
+---
+
+<nav class="flex bg-black text-white items-center">
+  <div class="font-bold text-lg ml-4">Ramblings of Sean</div>
+
+  <div class='ml-auto'>
+    <ul class="flex">
+      {
+        items.map((item) => (
+          <li>
+            <a class='p-4 block hover:bg-gray-700' href={item.path}>{item.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</nav>
