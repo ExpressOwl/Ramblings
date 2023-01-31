@@ -1,14 +1,23 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
-// https://astro.build/config
 import tailwind from "@astrojs/tailwind";
 
-// https://astro.build/config
 import image from "@astrojs/image";
 
-// https://astro.build/config
+import sitemap from "@astrojs/sitemap";
+
+import compress from "astro-compress";
+
 export default defineConfig({
-  integrations: [tailwind(), image({
-    serviceEntryPoint: '@astrojs/image/sharp'
-  })]
+  site: "https://Sean.Sew.dev",
+  integrations: [
+    tailwind(),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
+    sitemap(),
+    compress({
+      img: false
+    })
+  ],
 });
