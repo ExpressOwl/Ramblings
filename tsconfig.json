@@ -6,7 +6,8 @@
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@types": ["src/types"],
-      "@utilities": ["src/utilities"]
+      "@utilities": ["src/utilities"],
+      "@icons": ["src/icons"]
     }
   }
 }

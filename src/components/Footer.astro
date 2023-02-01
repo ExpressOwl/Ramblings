@@ -1,0 +1,44 @@
+---
+import { Icon } from 'astro-icon'
+
+const mediaLinks = [
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/seansew/",
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/ExpressOwl",
+  }
+];
+---
+
+<footer>
+  <div>
+    <small
+      >Copyright &copy; <span id="copyright"></span> | All rights reserved</small
+    >
+  </div>
+
+  <div>
+    <ul>
+      {
+        mediaLinks.map((item) => (
+          <li>
+            <a class="p-4" href={item.href}>
+              <Icon name={item.name} />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</footer>
+
+<script>
+  const year = document.querySelector("#copyright") as HTMLElement;
+  if (!year) {
+    ("2023");
+  }
+  year.textContent = new Date().getFullYear().toString();
+</script>

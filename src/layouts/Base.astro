@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props;
 
 import Navbar from "@components/Navbar.astro";
+import Footer from "@components/Footer.astro";
 ---
 
 <!DOCTYPE html>
@@ -33,10 +34,14 @@ import Navbar from "@components/Navbar.astro";
   </head>
 
   <body>
-    <Navbar />
+    <div class=' border-4 border-sky-500 min-h-screen grid auto-rows-even'>
+      <Navbar />
 
-    <div class="max-w-5xl mx-auto mt-16">
-      <slot />
+      <div class="max-w-5xl mx-auto mt-16">
+        <slot />
+      </div>
+
+      <Footer />
     </div>
   </body>
 </html>
