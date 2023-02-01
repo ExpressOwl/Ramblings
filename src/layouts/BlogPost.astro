@@ -51,10 +51,10 @@ const foundImageFormat = imageFormats.find((format: string): boolean => {
         <div class="mb-2">
           {tags.map((tag) => (
             <a
-              class="mr-2 uppercase text-blue-500"
+              class="mr-1 uppercase"
               href={`/posts/tag/${tag.toLocaleLowerCase()}`}
             >
-              #<span class="font-bold">{tag}</span>
+              <span class="bg-black text-purple-400 p-1">&#35;{tag}</span>
             </a>
           ))}
         </div>
@@ -69,7 +69,7 @@ const foundImageFormat = imageFormats.find((format: string): boolean => {
   {
     foundImageFormat !== undefined && (
       <Picture
-        class="mb-8"
+        class="mb-8 rounded-xl shadow-sm"
         src={`/images/${slug}.${foundImageFormat}`}
         widths={[400, 600, 1024]}
         sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, 1024px"

@@ -39,7 +39,7 @@ posts = posts.filter(post => {
 
 <Base title={`${capitalizeSentence(tag as string)} Blog Posts`}>
   <h1 class="mb-8 text-6xl">Blog Posts</h1>
-  <p>Showing Blog Posts for the {capitalizeSentence(tag as string)} tag</p>
+  <p>Showing Blog Posts with the &#35;{capitalizeSentence(tag as string)} tag</p>
 
   <PostList posts={posts} />
 </Base>
