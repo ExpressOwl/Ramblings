@@ -6,7 +6,7 @@ const items = [
   },
   {
     title: "Projects",
-    path: "/projects"
+    path: "/projects",
   },
   {
     title: "Blog",
@@ -19,15 +19,17 @@ const items = [
 ];
 ---
 
-<nav class="flex bg-black text-white items-center">
+<nav class="flex bg-black text-gray-300 items-center sticky top-0">
   <div class="font-bold text-lg ml-4">Ramblings of Sean</div>
 
-  <div class='ml-auto'>
+  <div class="ml-auto">
     <ul class="flex">
       {
         items.map((item) => (
           <li>
-            <a class='p-4 block hover:bg-gray-700' href={item.path}>{item.title}</a>
+            <a class="p-4 block hover:bg-gray-700" href={item.path}>
+              {item.title}
+            </a>
           </li>
         ))
       }

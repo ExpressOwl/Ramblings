@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from "astro-icon";
 
 const mediaLinks = [
   {
@@ -9,29 +9,22 @@ const mediaLinks = [
   {
     name: "GitHub",
     href: "https://github.com/ExpressOwl",
-  }
+  },
 ];
 ---
 
-<footer>
-  <div>
-    <small
-      >Copyright &copy; <span id="copyright"></span> | All rights reserved</small
-    >
-  </div>
-
-  <div>
-    <ul>
-      {
-        mediaLinks.map((item) => (
-          <li>
-            <a class="p-4" href={item.href}>
-              <Icon name={item.name} />
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+<footer class='mt-4'>
+  <div class="flex bg-black text-gray-300 items-center p-2">
+    <div class='mr-auto'>
+      Copyright &copy; <span id="copyright"></span> | All rights reserved
+    </div>
+    {
+      mediaLinks.map((item) => (
+        <a href={item.href}>
+          <Icon class="w-8 mx-1 text-gray-300" name={item.name} />
+        </a>
+      ))
+    }
   </div>
 </footer>
 
