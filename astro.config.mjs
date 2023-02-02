@@ -3,7 +3,7 @@ import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
 import compress from "astro-compress";
-import cloudflare from '@astrojs/cloudflare';
+import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,5 +14,4 @@ export default defineConfig({
     img: false
   })],
   output: "server",
-  adapter: cloudflare()
 });
