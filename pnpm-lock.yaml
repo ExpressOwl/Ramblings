@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@astrojs/cloudflare': ^6.1.1
   '@astrojs/image': ^0.13.1
   '@astrojs/netlify': ^2.1.1
   '@astrojs/sitemap': ^1.0.1
@@ -14,6 +15,7 @@ specifiers:
   tailwindcss: ^3.0.24
 
 dependencies:
+  '@astrojs/cloudflare': 6.1.1_astro@2.0.5
   '@astrojs/image': 0.13.1_astro@2.0.5+sharp@0.31.3
   '@astrojs/netlify': 2.1.1_astro@2.0.5
   '@astrojs/sitemap': 1.0.1
@@ -40,6 +42,16 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.1.1
       '@jridgewell/trace-mapping': 0.3.17
+    dev: false
+
+  /@astrojs/cloudflare/6.1.1_astro@2.0.5:
+    resolution: {integrity: sha512-g1nsDnxT0w0V3xDzhWf04or76fo93/Df/B6kLuMO8YXMIL3SZia4auSprSw3NNmLqZLGqnD9cX5QrpZ0hygSdw==}
+    peerDependencies:
+      astro: ^2.0.4
+    dependencies:
+      astro: 2.0.5_@types+node@18.11.18
+      esbuild: 0.15.18
+      tiny-glob: 0.2.9
     dev: false
 
   /@astrojs/compiler/0.31.4:
