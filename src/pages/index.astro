@@ -1,7 +1,32 @@
 ---
 import Base from "@layouts/Base.astro";
+
+const mediaLinks = [
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/seansew/",
+    text: 'Contact me on'
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/ExpressOwl",
+    text: 'Peek at my'
+  },
+];
 ---
 
 <Base title="Welcome">
-	<h1 class='text-4xl mb-4'>Welcome to my Domain!</h1>
+  <h1 class="text-4xl mb-4 text-center underline">Welcome to my Domain!</h1>
+
+  <div class="text-center">
+    {
+      mediaLinks.map((item) => (
+        <a href={item.href} target="_blank" 
+        class='text-3xl block bg-purple-500 px-2 py-4 cursor-pointer transition-all hover:shadow-md m-1'
+        >
+          {item.text} {item.name}!
+        </a>
+      ))
+    }
+  </div>
 </Base>

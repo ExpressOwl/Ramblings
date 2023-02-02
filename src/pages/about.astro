@@ -1,16 +1,49 @@
 ---
 import Base from "@layouts/Base.astro";
+import { Icon } from "astro-icon";
+
+const skillSet = [
+  {
+    name: "HTML",
+  },
+  {
+    name: "CSS",
+  },
+  {
+    name: "Javascript",
+  },
+  {
+    name: "TailwindCss",
+  },
+  {
+    name: "Astro",
+  },
+  {
+    name: "Typescript",
+  },
+];
 ---
 
 <Base title="About me">
-  <div class='prose'>
-    <h1>About Me</h1>
-    <p class='text-black text-lg'>
-      I am a Frontend Developer based in London. In my spare time I enjoy going
-      to the Gym, Gaming, and learning/building new projects. <br> My core skills
-      include HTML, CSS, Javascript and GIT, but I have also extended my reach
-      towards Tailwindcss and VITE. I am currently learning Typescript with
-      React and will hopefully have some projects up in the future.
+  <div class="prose">
+    <h1 class="underline">Who Am I?</h1>
+    <p class="text-black text-xl leading-8">
+      My name is Sean and I am an aspiring Junior Front End Developer. I love
+      building sites from the ground up because you get to see the progress made
+      with each line of code written, and it just feels very gratifying,
+      especially if it is a problem I have been working on for hours. <br>
+    </p>
+    <h1 class="underline">Skillset</h1>
+    <div class="flex">
+      {
+        skillSet.map((skill) => (
+          <Icon class="w-11 h-11 mx-4" name={skill.name} />
+        ))
+      }
+    </div>
+    <p class="text-black text-xl leading-8">
+      I am always looking at new technologies to utilise and am currently
+      looking to build new things in ReactJS.
     </p>
   </div>
 </Base>
