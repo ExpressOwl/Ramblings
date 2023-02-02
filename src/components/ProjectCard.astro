@@ -1,0 +1,130 @@
+---
+import { Icon } from "astro-icon";
+import { Picture } from "@astrojs/image/components";
+
+const skillSet = [
+  {
+    name: "HTML",
+  },
+  {
+    name: "CSS",
+  },
+  {
+    name: "Javascript",
+  },
+  {
+    name: "TailwindCss",
+  },
+  {
+    name: "Astro",
+  },
+  {
+    name: "Typescript",
+  },
+];
+---
+
+<div class="prose">
+  <article class="text-black">
+    <h1 class="text-4xl underline text-center">Pearl China</h1>
+    <Picture
+      class="mb-8 rounded-xl shadow-md"
+      src="/images/PearlChina.png"
+      widths={[400, 600, 1024]}
+      sizes="(max-width: 400px) 370px, (max-width: 600px) 600px, 1024px"
+      aspectRatio="5:3"
+      alt="Pearl China"
+      format="png"
+      background="white"
+    />
+    <div class="flex">
+      <Icon class="w-11 h-11 mx-4" name="HTML" />
+      <Icon class="w-11 h-11 mx-4" name="CSS" />
+      <Icon class="w-11 h-11 mx-4" name="Javascript" />
+      <a href="https://pearlchina.co.uk/" target="_blank">
+        <Icon class="w-11 h-11 mx-4" name="External" />
+      </a>
+    </div>
+    <p>
+      My first site that I deployed online was for a local business. It was a simple
+      site that used some vanilla Javascript and had a Google Map embed in it.
+      It is hosted on CloudFlare and gets a humble 700 vists a week.
+    </p>
+  </article>
+
+  <article class="text-black mb-8">
+    <h1 class="text-4xl underline text-center">Blog Site / Portfolio</h1>
+    <Picture
+      class="mb-8 rounded-lg shadow-lg"
+      src="/images/Portfolio.png"
+      widths={[400, 600, 1024]}
+      sizes="(max-width: 400px) 370px, (max-width: 600px) 600px, 1024px"
+      aspectRatio="5:3"
+      alt="Front End Portfolio"
+      format="png"
+      background="white"
+    />
+    <div class="flex">
+      <Icon class="w-11 h-11 mx-4" name="HTML" />
+      <Icon class="w-11 h-11 mx-4" name="Javascript" />
+      <Icon class="w-11 h-11 mx-4" name="Typescript" />
+      <Icon class="w-11 h-11 mx-4" name="Astro" />
+      <Icon class="w-11 h-11 mx-4" name="TailwindCss" />
+    </div>
+    <p>
+      My revamped portfolio site. My initial <a href="https://expressowl.github.io/Frontend-Portfolio/" class='hover:text-blue-500' >one</a>  had nice colors (in my
+      opinion), but did not have the scalability of my current one that was made
+      with Astro. I also wanted to challenge myself and use all the tech that I
+      have learnt so far.
+    </p>
+  </article>
+
+  <article class="text-black">
+    <h1 class="text-4xl underline text-center">Initial Speed</h1>
+    <Picture
+      class="mb-8 rounded-lg shadow-lg"
+      src="/images/InitialSpeed.png"
+      widths={[400, 600, 1024]}
+      sizes="(max-width: 400px) 370px, (max-width: 600px) 600px, 1024px"
+      aspectRatio="1:2"
+      alt="Initial Speed"
+      format="png"
+      background="white"
+    />
+    <div class="flex">
+      <Icon class="w-11 h-11 mx-4" name="HTML" />
+      <Icon class="w-11 h-11 mx-4" name="Javascript" />
+      <Icon class="w-11 h-11 mx-4" name="TailwindCss" />
+      <Icon class="w-11 h-11 mx-4" name="Vite" />
+      <a href="https://tailwind-website.onrender.com/" target="_blank">
+        <Icon class="w-11 h-11 mx-4" name="External" />
+      </a>
+    </div>
+    <p>
+      A Mock up site for my friend's Skyline repair business. This was made with
+      mobile in mind first and taught me the problems of having high quality
+      images. They may look sweet but they take FOREVER to load if your user has
+      a slow internet connection. I learnt about lazy loading and to adjust
+      width and height of images so that you don't load more than you need to.
+    </p>
+  </article>
+</div>
+
+<section class="prose text-black py-4 border-b last:border-t">
+  <h1 class="text-4xl underline text-center mb-4">More Projects</h1>
+
+  <div class="text-center">
+    <a
+      href="https://github.com/ExpressOwl"
+      target="_blank"
+      class="inline-block m-auto text-center text-3xl bg-gradient-to-r from-purple-500 to-pink-500 px-2 py-4 cursor-pointer transition-all hover:shadow-md"
+      >Visit my GitHub</a
+    >
+  </div>
+
+  <p>
+    If you visit my GitHub you can see some of the more mundane projects, such
+    as creating a toast message, making a pomodoro timer and making a ReactJS
+    countdown app.
+  </p>
+</section>
