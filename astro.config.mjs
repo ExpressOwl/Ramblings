@@ -14,4 +14,5 @@ export default defineConfig({
     img: false
   })],
   output: "server",
+  adapter: netlify()
 });
