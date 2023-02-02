@@ -15,6 +15,7 @@
     "@astrojs/netlify": "^2.1.1",
     "@astrojs/sitemap": "^1.0.1",
     "@astrojs/tailwind": "^3.0.1",
+    "@astrojs/vercel": "^3.0.0",
     "astro": "^2.0.5",
     "astro-compress": "^1.1.29",
     "astro-icon": "^0.8.0",
