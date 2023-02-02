@@ -1,7 +1,4 @@
 ---
-// import ThemeIcon from "@components/ThemeIcon.astro";
-import { Icon } from "astro-icon";
-
 const items = [
   {
     title: "Home",
@@ -28,27 +25,6 @@ const items = [
   </div>
   <div class="font-bold text-xl ml-4 p-4 sm:block">&diams; &diams;</div>
 
-  <!-- <div class="ml-auto absolute right-0 mr-2">
-    <a id="hamburger" class="md:hidden flex w-11 h-11 mx-4 cursor-pointer">
-      <Icon name="Hamburger" />
-    </a>
-    Mobile Navigation links, hidden by default
-    <section class="bg-black text-5xl hidden">
-      <nav id="mobile-menu" class="w-full m-0" aria-label="mobile-nav">
-        {
-          items.map((item) => (
-            <a
-              class="py-6 text-center hover:text-purple-500 block"
-              href={item.path}
-            >
-              {item.title}
-            </a>
-          ))
-        }
-      </nav>
-    </section>
-  </div> -->
-
   <div class="ml-auto">
     <ul class="flex">
       {
@@ -60,9 +36,6 @@ const items = [
           </li>
         ))
       }
-      <!-- <a href="" class="p-4 md:block text-xl hidden hover:bg-gray-500"
-        ><ThemeIcon /></a
-      > -->
     </ul>
   </div>
 </nav>
