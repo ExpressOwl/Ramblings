@@ -9,7 +9,7 @@ import sitemap from "@astrojs/sitemap";
 import compress from "astro-compress";
 
 export default defineConfig({
-  site: "https://Sean.Sew.io",
+  site: "https://sean.sew.io",
   integrations: [
     tailwind(),
     image({
