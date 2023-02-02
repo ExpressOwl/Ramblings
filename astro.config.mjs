@@ -9,7 +9,7 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://sean.sew.io",
+  site: "http://www.seansew.com/",
   integrations: [tailwind(), image({
     serviceEntryPoint: "@astrojs/image/sharp"
   }), sitemap(), compress({
