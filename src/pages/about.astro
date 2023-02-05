@@ -25,23 +25,25 @@ const skillSet = [
 ---
 
 <Base title="About me">
-  <div class="prose">
+  <div class='prose md:text-xl'>
     <h1 class="underline">Who Am I?</h1>
-    <p class="text-black text-xl leading-8">
+    <p class="text-black leading-8">
       My name is Sean and I am an aspiring Junior Front End Developer. I love
       building sites from the ground up because you get to see the progress made
       with each line of code written, and it just feels very gratifying,
       especially if it is a problem I have been working on for hours. <br>
     </p>
     <h1 class="underline">Skillset</h1>
-    <div class="flex">
+
+    <div class="flex flex-wrap">
       {
         skillSet.map((skill) => (
-          <Icon class="w-11 h-11 mx-4" name={skill.name} />
+          <Icon class="w-11 h-11 mx-4 my-2" name={skill.name} />
         ))
       }
     </div>
-    <p class="text-black text-xl leading-8">
+
+    <p class="text-black leading-8">
       I am always looking at new technologies to utilise and am currently
       looking to build new things in ReactJS.
     </p>
