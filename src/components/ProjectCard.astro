@@ -2,31 +2,14 @@
 import { Icon } from "astro-icon";
 import { Picture } from "@astrojs/image/components";
 
-const skillSet = [
-  {
-    name: "HTML",
-  },
-  {
-    name: "CSS",
-  },
-  {
-    name: "Javascript",
-  },
-  {
-    name: "TailwindCss",
-  },
-  {
-    name: "Astro",
-  },
-  {
-    name: "Typescript",
-  },
-];
+// class Projects {
+//   constructor()
+// }
 ---
 
-<div class="prose md:text-xl text-center">
+<div class="prose md:text-xl text-center mx-4">
   <article class="text-black mb-8 min-w-fit">
-    <h1 class="underline">Anime Database Search</h1>
+    <h1 class="underline text-black">Anime Database Search</h1>
     <Picture
       class="mb-8 rounded-lg shadow-lg"
       src="/images/JikanAPI.png"
@@ -42,20 +25,24 @@ const skillSet = [
       <Icon class="w-11 h-11 mx-3" name="Javascript" />
       <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
       <a href="https://anime-api-xi.vercel.app/" target="_blank">
-        <Icon class="w-11 h-11 mx-4" name="External" />
+        <Icon class="w-11 h-11 mx-3" name="External" />
       </a>
+      <Icon class="w-16 h-16 ml-[-22px] rotate-180" name="Arrow" />
     </div>
-    <p>
-      A React app I made using JikanAPI, which is a REST Api that contains
-      information about shows from Japan. It contains a search function which
-      brings back 15 shows alongside a synopsis and image, all pulled from the
-      Api. It is also accompanied by an aside which contains the current Top Ten
-      Shows, which changes depending on whatever is most popular at the time.
+    <p class="text-left">
+      A React app I made using a REST API, containing JSON information about
+      shows from Japan. It has a search function which brings back 15 shows
+      alongside a synopsis and cover image, all dynamically pulled from the API.
+      It is also accompanied by an aside which presents the current Top Ten
+      Shows. View the code <a
+        href="https://github.com/ExpressOwl/animeAPI"
+        class="text-violet-600">here</a
+      >.
     </p>
   </article>
 
   <article class="text-black">
-    <h1 class="underline">Pearl China</h1>
+    <h1 class="underline text-black">Pearl China</h1>
     <Picture
       class="mb-8 rounded-xl shadow-md"
       src="/images/PearlChina.png"
@@ -73,16 +60,21 @@ const skillSet = [
       <a href="https://pearlchina.co.uk/" target="_blank">
         <Icon class="w-11 h-11 mx-4" name="External" />
       </a>
+      <Icon class="w-16 h-16 ml-[-22px] rotate-180" name="Arrow" />
     </div>
-    <p>
-      Client wanted a mobile site which will hold their ever updating menu and prices.
-      The site has a Google Map Embed and uses grid layout for the menus for a responsive experience.
-      It is hosted on Vercel via CloudFlare and gets a humble 1000 vists a week.
+    <p class="text-left">
+      Client wanted a mobile site which will hold their ever updating menu and
+      prices. The site has a Google Map Embed and uses grid layout for the menus
+      for a responsive experience. It is hosted on Vercel via CloudFlare and
+      gets a humble 1000 vists a week. View the code <a
+        class="text-violet-600"
+        href="https://github.com/ExpressOwl/PearlChinaV2">here</a
+      >.
     </p>
   </article>
 
   <article class="text-black mb-8 min-w-fit">
-    <h1 class="underline">Blog Site/Portfolio</h1>
+    <h1 class="underline text-black">Blog Site/Portfolio</h1>
     <Picture
       class="mb-8 rounded-lg shadow-lg"
       src="/images/Portfolio.png"
@@ -100,18 +92,22 @@ const skillSet = [
       <Icon class="w-11 h-11 mx-3" name="Astro" />
       <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
     </div>
-    <p>
+    <p class="text-left">
       My revamped portfolio site. My initial <a
+        class="text-violet-600"
         href="https://expressowl.github.io/Frontend-Portfolio/"
         class="hover:text-blue-500">one</a
-      > had nice colors (in my opinion), but did not have the scalability of my current
-      one that was made with Astro. I also wanted to challenge myself and use all
-      the tech that I have learnt so far.
+      > had was good old simple, but did not have the scalability of my current one
+      that was made with Astro. I also wanted to challenge myself and use all the
+      tech that I have learnt so far. View the code <a
+        class="text-violet-600"
+        href="https://github.com/ExpressOwl/Ramblings">here</a
+      >.
     </p>
   </article>
 
   <article class="text-black">
-    <h1 class="underline">Initial Speed</h1>
+    <h1 class="underline text-black">Initial Speed</h1>
     <Picture
       class="mb-8 rounded-xl shadow-md"
       src="/images/InitialSpeed.png"
@@ -130,18 +126,20 @@ const skillSet = [
       <a href="https://tailwind-website.onrender.com/" target="_blank">
         <Icon class="w-11 h-11 mx-4" name="External" />
       </a>
+      <Icon class="w-16 h-16 ml-[-22px] rotate-180" name="Arrow" />
     </div>
-    <p>
+    <p class="text-left">
       A Mock up site for my friend's Skyline repair business. This was made with
       mobile in mind first and taught me the problems of having high quality
-      images. They may look sweet but they take FOREVER to load if your user has
-      a slow internet connection. I learnt about lazy loading and to adjust
-      width and height of images so that you don't load more than you need to.
+      images. <br /> They may look sweet but they take FOREVER to load if your user
+      has a slow internet connection. I learnt about lazy loading and to adjust width
+      and height of images so that you don't load more than you need to. View the
+      code <a class='text-violet-600' href="https://github.com/ExpressOwl/Tailwind">here</a>.
     </p>
   </article>
 
   <section class="text-black py-4 border-b last:border-t">
-    <h1 class="underline">More Projects</h1>
+    <h1 class="text-black prose">More Projects</h1>
 
     <div class="text-center">
       <a
@@ -152,8 +150,8 @@ const skillSet = [
       >
     </div>
 
-    <p>
-      If you visit my GitHub you can see some of the more mundane projects, such
+    <p class='text-left'>
+      If you visit my GitHub you can see some more projects, such
       as creating a toast message, making a pomodoro timer and making a ReactJS
       countdown app.
     </p>

@@ -1,32 +1,89 @@
 ---
 import Base from "@layouts/Base.astro";
+import { Icon } from "astro-icon";
 
 const mediaLinks = [
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/seansew/",
-    text: 'Contact me on'
+    text: "Contact me on",
   },
   {
     name: "GitHub",
     href: "https://github.com/ExpressOwl",
-    text: 'Peek at my'
+    text: "Peek at my",
+  },
+];
+
+const skillSet = [
+  {
+    name: "HTML",
+  },
+  {
+    name: "CSS",
+  },
+  {
+    name: "Javascript",
+  },
+  {
+    name: "TailwindCss",
+  },
+  {
+    name: "Astro",
+  },
+  {
+    name: "Typescript",
+  },
+  {
+    name: "React",
   },
 ];
 ---
 
 <Base title="Welcome">
   <h1 class="text-4xl mb-4 text-center underline">Welcome to my Domain!</h1>
-
-  <div class="text-center">
+  <img
+    class="2xl:block absolute h-4/6 top-28 left-14 opacity-70 hidden -z-10"
+    src="/images/WorkingMan.png"
+    alt=""
+  />
+  <img
+    class="2xl:block absolute h-4/6 top-28 right-14 opacity-70 hidden -z-10"
+    src="/images/WorkingMan2.png"
+    alt=""
+  />
+  <div class="text-center mb-4">
     {
       mediaLinks.map((item) => (
-        <a href={item.href} target="_blank" 
-        class='text-3xl block bg-gradient-to-r from-purple-500 to-pink-500 px-2 py-4 cursor-pointer transition-all hover:shadow-md m-1'
+        <a
+          href={item.href}
+          target="_blank"
+          class="text-3xl mx-4 block bg-gradient-to-r from-purple-500 to-pink-500 px-2 py-4 cursor-pointer transition-all hover:shadow-md m-1"
         >
           {item.text} {item.name}!
         </a>
       ))
     }
+  </div>
+
+  <div class="prose text-xl mx-4">
+    <h2 class="underline">About Me</h2>
+    <p class="text-black leading-8">
+      My name is Sean and I am a Front End Developer. I love building sites from
+      the ground up because you get to see the progress made with each line of
+      code written, and it feels very gratifying to slowly piece together a
+      project <br /> I enjoy learning whatever technology that helps grow my Front
+      End skills and have experience designing, launching and maintaining websites
+      on my own.
+    </p>
+    <h2 class="prose text-xl underline text-black">
+      Techstack: <div class="flex flex-wrap mt-4">
+        {
+          skillSet.map((skill) => (
+            <Icon class="w-11 h-11 mx-4 my-2" name={skill.name} />
+          ))
+        }
+      </div>
+    </h2>
   </div>
 </Base>
