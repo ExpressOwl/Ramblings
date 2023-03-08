@@ -43,7 +43,7 @@ const foundImageFormat = imageFormats.find((format: string): boolean => {
 ---
 
 <Base title="Blog Post">
-  <div class="mb-8">
+  <div class="mb-8 mx-4">
     {draft && <p class="bg-red-700 text-white px-2 inline-block mb-4">DRAFT</p>}
 
     {
@@ -81,7 +81,7 @@ const foundImageFormat = imageFormats.find((format: string): boolean => {
     )
   }
 
-  <div class="prose prose-purple">
+  <div class="prose prose-purple mx-4">
     <slot />
   </div>
 </Base>

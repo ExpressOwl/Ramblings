@@ -7,9 +7,9 @@ import { Picture } from "@astrojs/image/components";
 // }
 ---
 
-<div class="prose md:text-xl text-center mx-4">
+<div class="prose md:text-xl text-center">
   <article class="text-black mb-8 min-w-fit">
-    <h1 class="underline text-black">Anime Database Search</h1>
+    <h1 class="underline text-black mx-4">Anime Database Search</h1>
     <Picture
       class="mb-8 rounded-lg shadow-lg"
       src="/images/JikanAPI.png"
@@ -27,9 +27,9 @@ import { Picture } from "@astrojs/image/components";
       <a href="https://anime-api-xi.vercel.app/" target="_blank">
         <Icon class="w-11 h-11 mx-3" name="External" />
       </a>
-      <Icon class="w-16 h-16 ml-[-22px] rotate-180" name="Arrow" />
+      <Icon class="w-16 h-16 ml-[-22px] rotate-180 hidden sm:block" name="Arrow" />
     </div>
-    <p class="text-left">
+    <p class="text-left mx-4">
       A React app I made using a REST API, containing JSON information about
       shows from Japan. It has a search function which brings back 15 shows
       alongside a synopsis and cover image, all dynamically pulled from the API.
@@ -60,9 +60,9 @@ import { Picture } from "@astrojs/image/components";
       <a href="https://pearlchina.co.uk/" target="_blank">
         <Icon class="w-11 h-11 mx-4" name="External" />
       </a>
-      <Icon class="w-16 h-16 ml-[-22px] rotate-180" name="Arrow" />
+      <Icon class="w-16 h-16 ml-[-22px] rotate-180 hidden sm:block" name="Arrow" />
     </div>
-    <p class="text-left">
+    <p class="text-left mx-4">
       Client wanted a mobile site which will hold their ever updating menu and
       prices. The site has a Google Map Embed and uses grid layout for the menus
       for a responsive experience. It is hosted on Vercel via CloudFlare and
@@ -92,7 +92,7 @@ import { Picture } from "@astrojs/image/components";
       <Icon class="w-11 h-11 mx-3" name="Astro" />
       <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
     </div>
-    <p class="text-left">
+    <p class="text-left mx-4">
       My revamped portfolio site. My initial <a
         class="text-violet-600"
         href="https://expressowl.github.io/Frontend-Portfolio/"
@@ -126,9 +126,9 @@ import { Picture } from "@astrojs/image/components";
       <a href="https://tailwind-website.onrender.com/" target="_blank">
         <Icon class="w-11 h-11 mx-4" name="External" />
       </a>
-      <Icon class="w-16 h-16 ml-[-22px] rotate-180" name="Arrow" />
+      <Icon class="w-16 h-16 ml-[-22px] rotate-180 hidden sm:block" name="Arrow" />
     </div>
-    <p class="text-left">
+    <p class="text-left mx-4">
       A Mock up site for my friend's Skyline repair business. This was made with
       mobile in mind first and taught me the problems of having high quality
       images. <br /> They may look sweet but they take FOREVER to load if your user
@@ -139,7 +139,7 @@ import { Picture } from "@astrojs/image/components";
   </article>
 
   <section class="text-black py-4 border-b last:border-t">
-    <h1 class="text-black prose">More Projects</h1>
+    <h1 class="text-black">More Projects</h1>
 
     <div class="text-center">
       <a
@@ -150,7 +150,7 @@ import { Picture } from "@astrojs/image/components";
       >
     </div>
 
-    <p class='text-left'>
+    <p class='text-left mx-4'>
       If you visit my GitHub you can see some more projects, such
       as creating a toast message, making a pomodoro timer and making a ReactJS
       countdown app.
