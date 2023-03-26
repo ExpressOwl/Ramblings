@@ -63,7 +63,7 @@ const foundImageFormat = imageFormats.find((format: string): boolean => {
 
     <h1 class="text-3xl mb-2">{title}</h1>
 
-    <p>{formatDate(date)}</p>
+    <p class="text-lg">{formatDate(date)}</p>
   </div>
 
   {
@@ -81,7 +81,7 @@ const foundImageFormat = imageFormats.find((format: string): boolean => {
     )
   }
 
-  <div class="prose prose-purple mx-4">
+  <div class="prose prose-purple mx-4 text-black text-lg">
     <slot />
   </div>
 </Base>
