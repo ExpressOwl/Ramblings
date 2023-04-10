@@ -44,7 +44,7 @@ const foundImageFormat = imageFormats.find((format: string): boolean => {
 
 <Base title="Blog Post">
   <div class="mb-8 mx-4">
-    {draft && <p class="bg-red-700 text-white px-2 inline-block mb-4">DRAFT</p>}
+    {draft && <p class="bg-red-700 text-[#f1f1f1] px-2 inline-block mb-4">DRAFT</p>}
 
     {
       tags && (
@@ -54,7 +54,7 @@ const foundImageFormat = imageFormats.find((format: string): boolean => {
               class="mr-1 uppercase"
               href={`/posts/tag/${tag.toLocaleLowerCase()}`}
             >
-              <span class="bg-black text-purple-400 p-1">&#35;{tag}</span>
+              <span class="bg-black text-[#f1f1f1] p-1">&#35;{tag}</span>
             </a>
           ))}
         </div>
@@ -81,7 +81,7 @@ const foundImageFormat = imageFormats.find((format: string): boolean => {
     )
   }
 
-  <div class="prose prose-purple mx-4 text-black text-lg">
+  <div class="prose prose-neutral mx-4 text-black text-lg">
     <slot />
   </div>
 </Base>

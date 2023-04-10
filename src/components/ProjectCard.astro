@@ -4,12 +4,12 @@ import { Picture } from "@astrojs/image/components";
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-2 mx-auto place-items-center">
-  <!-- REST API  -->
+  <!-- Movie Guess  -->
   <div
     class="max-w-sm mx-4 mb-4 border rounded-lg shadow bg-gray-800 border-gray-700"
   >
-    <a href="https://anime-api-xi.vercel.app/" target="_blank">
-      <img class="rounded-t-lg" src="/images/JikanAPI.png" alt="" />
+    <a href="https://movie-date-guesser-popcorn.vercel.app/" target="_blank">
+      <img class="rounded-t-lg" src="/images/MovieDate.png" alt="" />
     </a>
     <div class="p-5">
       <div class="flex justify-center mb-4">
@@ -18,21 +18,23 @@ import { Picture } from "@astrojs/image/components";
         <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
       </div>
       <a href="https://anime-api-xi.vercel.app/" target="_blank">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
-          Anime (API) Database Search
+        <h5
+          class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1] opacity-95"
+        >
+          Movie Date Guessing Game
         </h5>
       </a>
-      <p class="mb-3 font-normal text-gray-400">
-        A React app I made using a REST API called Jikan, containing JSON
-        information about shows from Japan. I utilized 'useState' from React as
-        well as async, fetch, await. Creating a search function parsing through
-        the JSON data, returning 15 related shows, each within a card with their
-        own synopsis and cover image.
+      <p class="mb-3 font-normal text-stone-400">
+        I used the API from The Movie Data Base and was able to create a game
+        where you guess the date of the movie shown. I used the npm package
+        axios this time to fetch the JSON data. Many common methods were used
+        when building this game, such as useEffect(), JSON.stringify(), REGEX
+        with replace(), LocalStorage, and many more.
       </p>
       <a
         href="https://anime-api-xi.vercel.app/"
         target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
       >
         Visit the Site
         <svg
@@ -50,7 +52,72 @@ import { Picture } from "@astrojs/image/components";
       <a
         href="https://github.com/ExpressOwl/animeAPI"
         target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+      >
+        GitHub Repo
+        <svg
+          aria-hidden="true"
+          class="w-4 h-4 ml-2 -mr-1"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path></svg
+        >
+      </a>
+    </div>
+  </div>
+  <!-- Movie Guess  -->
+
+  <!-- REST API  -->
+  <div
+    class="max-w-sm mx-4 mb-4 border rounded-lg shadow bg-gray-800 border-gray-700"
+  >
+    <a href="https://anime-api-xi.vercel.app/" target="_blank">
+      <img class="rounded-t-lg" src="/images/JikanAPI.png" alt="" />
+    </a>
+    <div class="p-5">
+      <div class="flex justify-center mb-4">
+        <Icon class="w-11 h-11 mx-3" name="React" />
+        <Icon class="w-11 h-11 mx-3" name="Javascript" />
+        <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
+      </div>
+      <a href="https://anime-api-xi.vercel.app/" target="_blank">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1]">
+          Anime (API) Database Search
+        </h5>
+      </a>
+      <p class="mb-3 font-normal text-stone-400">
+        A React app I made using a REST API called Jikan, containing JSON
+        information about shows from Japan. I utilized 'useState' from React as
+        well as async, fetch, await. Creating a search function parsing through
+        the JSON data, returning 15 related shows, each within a card with their
+        own synopsis and cover image.
+      </p>
+      <a
+        href="https://anime-api-xi.vercel.app/"
+        target="_blank"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+      >
+        Visit the Site
+        <svg
+          aria-hidden="true"
+          class="w-4 h-4 ml-2 -mr-1"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path></svg
+        >
+      </a>
+      <a
+        href="https://github.com/ExpressOwl/animeAPI"
+        target="_blank"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
       >
         GitHub Repo
         <svg
@@ -83,11 +150,11 @@ import { Picture } from "@astrojs/image/components";
         <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
       </div>
       <a href="https://www.pearlchina.co.uk/" target="_blank">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1]">
           Pearl China (Online Menu)
         </h5>
       </a>
-      <p class="mb-3 font-normal text-gray-400">
+      <p class="mb-3 font-normal text-stone-400">
         Client wanted a mobile site which will hold their ever updating menu and
         prices. The site has a Google Map Embed and uses grid layout for the
         menus for a responsive experience. This site taught me how to include
@@ -97,7 +164,7 @@ import { Picture } from "@astrojs/image/components";
       <a
         href="https://www.pearlchina.co.uk/"
         target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
       >
         Visit the Site
         <svg
@@ -115,7 +182,7 @@ import { Picture } from "@astrojs/image/components";
       <a
         href="https://github.com/ExpressOwl/PearlChinaV2"
         target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
       >
         GitHub Repo
         <svg
@@ -149,11 +216,11 @@ import { Picture } from "@astrojs/image/components";
         <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
       </div>
       <a href="https://seansew.com/" target="_blank">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1]">
           My Portfolio / Blog
         </h5>
       </a>
-      <p class="mb-3 font-normal text-gray-400">
+      <p class="mb-3 font-normal text-stone-400">
         This portfolio site is made using AstroJS. I learnt the convenience of
         reuseable components and how folder structure is important in order to
         make code readable and maintainable. This project also taught me how to
@@ -163,7 +230,7 @@ import { Picture } from "@astrojs/image/components";
       <a
         href="https://github.com/ExpressOwl/Ramblings"
         target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
       >
         GitHub Repo
         <svg
@@ -197,11 +264,11 @@ import { Picture } from "@astrojs/image/components";
         <Icon class="w-11 h-11 mx-3" name="Vite" />
       </div>
       <a href="https://tailwind-website.onrender.com/" target="_blank">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1]">
           Initial Speed
         </h5>
       </a>
-      <p class="mb-3 font-normal text-gray-400">
+      <p class="mb-3 font-normal text-stone-400">
         A Mock up site for my friend's car repair business. It is a one page
         site and was made with mobile first in mind. I learnt about using lazy
         loading when using images that are too high quality and how to use CSS
@@ -212,7 +279,7 @@ import { Picture } from "@astrojs/image/components";
       <a
         href="https://tailwind-website.onrender.com/"
         target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
       >
         Visit the Site
         <svg
@@ -230,7 +297,7 @@ import { Picture } from "@astrojs/image/components";
       <a
         href="https://github.com/ExpressOwl/Tailwind"
         target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
       >
         GitHub Repo
         <svg
@@ -263,21 +330,21 @@ import { Picture } from "@astrojs/image/components";
         <Icon class="w-11 h-11 mx-3" name="Javascript" />
       </div>
       <a href="https://tic-tac-toe-eight-pink.vercel.app/" target="_blank">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1]">
           Tic-Tac-Toe
         </h5>
       </a>
-      <p class="mb-3 font-normal text-gray-400">
-        A rite of passage for people learning the core 3 of HTML,
-        CSS and JavaScript. The game was made to utilizes a lot of common methods such as
-        addEventListener(), map(), split() in conjunction with DOM manipulation.
-        I also followed best practices for Web Accessibility, so you can
-        tab through each tile and it will properly focus.
+      <p class="mb-3 font-normal text-stone-400">
+        A rite of passage for people learning the core 3 of HTML, CSS and
+        JavaScript. The game was made to utilizes a lot of common methods such
+        as addEventListener(), map(), split() in conjunction with DOM
+        manipulation. I also followed best practices for Web Accessibility, so
+        you can tab through each tile and it will properly focus.
       </p>
       <a
         href="https://tic-tac-toe-eight-pink.vercel.app/"
         target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
       >
         Play with a Friend
         <svg
@@ -295,7 +362,7 @@ import { Picture } from "@astrojs/image/components";
       <a
         href="https://github.com/ExpressOwl/Tic-Tac-Toe"
         target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
       >
         GitHub Repo
         <svg
@@ -328,11 +395,11 @@ import { Picture } from "@astrojs/image/components";
         <Icon class="w-11 h-11 mx-3" name="Javascript" />
       </div>
       <a href="https://space-invader.pages.dev/" target="_blank">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1]">
           Space Invaders
         </h5>
       </a>
-      <p class="mb-3 font-normal text-gray-400">
+      <p class="mb-3 font-normal text-stone-400">
         Made a Space Invaders clone using Object Oriented Programming JavaScript
         with HTML Canvas. This was my first game and it was interesting to learn
         about collision detection, drawing on the canvas with the context
@@ -343,7 +410,7 @@ import { Picture } from "@astrojs/image/components";
       <a
         href="https://space-invader.pages.dev/"
         target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
       >
         Play the Game
         <svg
@@ -361,7 +428,7 @@ import { Picture } from "@astrojs/image/components";
       <a
         href="https://github.com/ExpressOwl/Space-Invader"
         target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
       >
         GitHub Repo
         <svg

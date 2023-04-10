@@ -33,7 +33,7 @@ if (import.meta.env.PROD) {
     {post.frontmatter.draft && 
       <p class='bg-red-700 text-white px-2 inline-block'>DRAFT</p>
     }
-    <a class='text-blue-700 hover:underline' href={post.url}>{post.frontmatter.title}</a>
+    <a class='text-[#f1f1f1] hover:underline' href={post.url}>{post.frontmatter.title}</a>
     <p>{formatDate(post.frontmatter.date)}</p>
   </div>
 ))}
