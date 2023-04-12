@@ -1,8 +1,8 @@
 ---
 layout: "../../layouts/BlogPost.astro"
-title: Removing the .html from a website
+title: Making a game using React and TMDB API
 date: 2023-04-10
-tags: ["React", "TailwindCSS", "Vite", "API"]
+tags: ["React", "TailwindCSS", "Vite", "API", "Axios"]
 ---
 
 I recently found a very well documented API called The Movie DataBase (https://www.themoviedb.org/), and so wanted to create something with it. I was initially thinking of a simple IMDB clone but it didn't seem very unique so I came up with the idea of creating some sort of game. I settled on a game where you have to guess the date of movie poster shown and you are given 3 lives to try and get a high score. 
