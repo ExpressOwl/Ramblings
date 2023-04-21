@@ -6,15 +6,15 @@ module.exports = {
       gridAutoRows: {
         even: "auto 1fr auto",
       },
-      fontFamily: {
-        sans: [
-          "SF3FontBold",
-          "Helvetica",
-          "Times New Roman",
-          "Arial",
-          "sans-serif",
-        ],
-      },
+      // fontFamily: {
+      //   sans: [
+      //     "SF3FontBold",
+      //     "Helvetica",
+      //     "Times New Roman",
+      //     "Arial",
+      //     "sans-serif",
+      //   ],
+      // },
     },
   },
   plugins: [require("@tailwindcss/typography")],
