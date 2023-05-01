@@ -38,7 +38,6 @@ const skillSet = [
 ---
 
 <Base title="Welcome">
-  <h1 class="text-4xl mb-4 text-center underline">Welcome to my Domain!</h1>
   <img
     class="2xl:block absolute h-4/6 top-28 left-14 opacity-70 hidden -z-10"
     src="/images/WorkingMan.png"
@@ -49,29 +48,33 @@ const skillSet = [
     src="/images/WorkingMan2.png"
     alt=""
   />
-  <div class="text-center mb-4">
-    {
-      mediaLinks.map((item) => (
-        <a
-          href={item.href}
-          target="_blank"
-          class="text-3xl mx-4 block bg-gradient-to-r from-purple-500 to-pink-500 px-2 py-4 cursor-pointer transition-all hover:shadow-md m-1"
-        >
-          {item.text} {item.name}!
-        </a>
-      ))
-    }
-  </div>
 
-  <div class="prose text-xl mx-4 text-[#0f0f0f]">
+  <div class="prose mx-4 text-[#0f0f0f]">
     <h2 class="underline text-[#0f0f0f]">About Me</h2>
-    <p class="leading-8">
-      My name is Sean and I am a Front End Developer. I love building sites from
-      the ground up because you get to see the progress made with each line of
-      code written, and it feels very gratifying to slowly piece together a
-      project. <br /> I value responsive and engaging user experiences, usually making
-      sites mobile first in mind, and am committed in continuing to grow my skills.
+    <p class="text-lg font-bold">
+      My name is Sean and I love building sites from the ground up because you
+      get to see the progress made with each line of code written, and it feels
+      very gratifying to slowly piece together a project. <br /> I value responsive
+      and engaging user experiences, hence creating sites using React, and following
+      a mobile first approach with TailwindCSS. I also unit test my JavaScript with
+      Jest if needed.
     </p>
+    <div class="text-center mb-4">
+      {
+        mediaLinks.map((item) => (
+          <>
+            <a
+              href={item.href}
+              target="_blank"
+              class="text-[#f1f1f1] bg-[#24292F] focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center focus:ring-gray-500 hover:bg-[#050708]/30 mr-2 mb-2"
+            >
+              <Icon name={item.name} class="w-4 h-4 mr-2 -ml-1" />
+              {item.text} {item.name}!
+            </a>
+          </>
+        ))
+      }
+    </div>
     <h2 class="prose text-xl underline">
       Techstack: <div class="flex flex-wrap mt-4 text-[#0f0f0f]">
         {
