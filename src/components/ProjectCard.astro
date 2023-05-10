@@ -1,465 +1,190 @@
 ---
 import { Icon } from "astro-icon";
+import Projects from "@components/Projects.astro";
 import { Picture } from "@astrojs/image/components";
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-2 mx-auto place-items-center">
-  <!-- Movie Guess  -->
-  <div
-    class="max-w-sm mx-4 mb-4 border rounded-lg shadow bg-gray-800 border-gray-700"
+  <!-- Hexa-Find -->
+  <Projects
+    href="https://hexa-find.vercel.app/"
+    src="/images/Hexa-Find.png"
+    title="Hexa-Find"
+    git="https://github.com/ExpressOwl/Hexa-Find"
   >
-    <a href="https://movie-date-guesser-popcorn.vercel.app/" target="_blank">
-      <img class="rounded-t-lg" src="/images/MovieDate.png" alt="" />
-    </a>
-    <div class="p-5">
-      <div class="flex justify-center mb-4">
-        <Icon class="w-11 h-11 mx-3" name="React" />
-        <Icon class="w-11 h-11 mx-3" name="Javascript" />
-        <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
-      </div>
-      <a href="https://movie-date-guesser-popcorn.vercel.app/" target="_blank">
-        <h5
-          class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1] opacity-95"
-        >
-          Movie Date Guessing Game
-        </h5>
-      </a>
-      <p class="mb-3 font-normal text-stone-400">
-        I used the API from The Movie Data Base and was able to create a game
-        where you guess the date of the movie shown. I used the npm package
-        axios this time to fetch the JSON data. Many common methods were used
-        when building this game, such as useEffect(), JSON.stringify(), REGEX
-        with replace(), LocalStorage, and many more.
-      </p>
-      <a
-        href="https://movie-date-guesser-popcorn.vercel.app/"
-        target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-      >
-        Visit the Site
-        <svg
-          aria-hidden="true"
-          class="w-4 h-4 ml-2 -mr-1"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
-        >
-      </a>
-      <a
-        href="https://github.com/ExpressOwl/movie-date-guesser"
-        target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-      >
-        GitHub Repo
-        <svg
-          aria-hidden="true"
-          class="w-4 h-4 ml-2 -mr-1"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
-        >
-      </a>
+    <div class="flex justify-center mb-4" slot="icon">
+      <Icon class="w-11 h-11 mx-3" name="React" />
+      <Icon class="w-11 h-11 mx-3" name="Javascript" />
+      <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
     </div>
-  </div>
-  <!-- Movie Guess  -->
+    <p class="mb-3 font-normal text-stone-400" slot="description">
+      A React web application that generates a random color and three possible
+      answer choices, and challenges the user to select the correct color.
+      Techniques used in this application include the useState hook to manage
+      state variables, and the useEffect hook to run the generateColor function
+      on mount. The app also employs conditional rendering to display feedback
+      to the user indicating whether they have selected the correct color.
+    </p>
+  </Projects>
+  <!-- Hexa-Find -->
 
-  <!-- REST API  -->
-  <div
-    class="max-w-sm mx-4 mb-4 border rounded-lg shadow bg-gray-800 border-gray-700"
+  <!-- Timeless Theatre -->
+  <Projects
+    href="https://movie-date-guesser-popcorn.vercel.app/"
+    src="/images/MovieDate.png"
+    title="Timeless Theatre"
+    git="https://github.com/ExpressOwl/movie-date-guesser"
   >
-    <a href="https://anime-api-xi.vercel.app/" target="_blank">
-      <img class="rounded-t-lg" src="/images/JikanAPI.png" alt="" />
-    </a>
-    <div class="p-5">
-      <div class="flex justify-center mb-4">
-        <Icon class="w-11 h-11 mx-3" name="React" />
-        <Icon class="w-11 h-11 mx-3" name="Javascript" />
-        <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
-      </div>
-      <a href="https://anime-api-xi.vercel.app/" target="_blank">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1]">
-          Anime (API) Database Search
-        </h5>
-      </a>
-      <p class="mb-3 font-normal text-stone-400">
-        A React app I made using a REST API called Jikan, containing JSON
-        information about shows from Japan. I utilized 'useState' from React as
-        well as async, fetch, await. Creating a search function parsing through
-        the JSON data, returning 15 related shows, each within a card with their
-        own synopsis and cover image.
-      </p>
-      <a
-        href="https://anime-api-xi.vercel.app/"
-        target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-      >
-        Visit the Site
-        <svg
-          aria-hidden="true"
-          class="w-4 h-4 ml-2 -mr-1"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
-        >
-      </a>
-      <a
-        href="https://github.com/ExpressOwl/animeAPI"
-        target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-      >
-        GitHub Repo
-        <svg
-          aria-hidden="true"
-          class="w-4 h-4 ml-2 -mr-1"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
-        >
-      </a>
+    <div class="flex justify-center mb-4" slot="icon">
+      <Icon class="w-11 h-11 mx-3" name="React" />
+      <Icon class="w-11 h-11 mx-3" name="Javascript" />
+      <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
     </div>
-  </div>
-  <!-- REST API  -->
+    <p class="mb-3 font-normal text-stone-400" slot="description">
+      A game using The Movie Database API where the user guesses the date of the
+      movie shown. The npm package Axios was used to fetch the JSON data. Said
+      JSON data was manipulated by methods such as JSON.stringify, REGEX with
+      replace, LocalStorage, etc, to obtain only what was needed. Common react
+      hooks were utilized in conjunction with LocalStorage to keep track of user
+      lives and score.
+    </p>
+  </Projects>
+  <!-- Timeless Theatre -->
+
+  <!-- Ramblings -->
+  <Projects
+    href="https://seansew.com/"
+    src="/images/Portfolio.png"
+    title="Portfolio/Blog"
+    git="https://github.com/ExpressOwl/Ramblings"
+  >
+    <div class="flex justify-center mb-4" slot="icon">
+      <Icon class="w-11 h-11 mx-3" name="Javascript" />
+      <Icon class="w-11 h-11 mx-3" name="Astro" />
+      <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
+    </div>
+    <p class="mb-3 font-normal text-stone-400" slot="description">
+      This portfolio site is made using AstroJS. Astro Components are similar to
+      React Props and promote reusability and readability. This project taught
+      me how folder structure is important in order to make code maintainable.
+      This project also taught me how to use GIT and its version control system,
+      as well as reading of the documentations in order to properly implement
+      dependencies.
+    </p>
+  </Projects>
+  <!-- Ramblings -->
 
   <!-- Pearl China -->
-  <div
-    class="max-w-sm mx-4 mb-4 border rounded-lg shadow bg-gray-800 border-gray-700"
+  <Projects
+    href="https://www.pearlchina.co.uk/"
+    src="/images/PearlChina.png"
+    title="Pearl China (Online Menu)"
+    git="https://github.com/ExpressOwl/PearlChinaV2"
   >
-    <a href="https://www.pearlchina.co.uk/" target="_blank">
-      <img class="rounded-t-lg" src="/images/PearlChina.png" alt="" />
-    </a>
-    <div class="p-5">
-      <div class="flex justify-center mb-4">
-        <Icon class="w-11 h-11 mx-3" name="HTML" />
-        <Icon class="w-11 h-11 mx-3" name="Vite" />
-        <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
-      </div>
-      <a href="https://www.pearlchina.co.uk/" target="_blank">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1]">
-          Pearl China (Online Menu)
-        </h5>
-      </a>
-      <p class="mb-3 font-normal text-stone-400">
-        Client wanted a mobile site which will hold their ever updating menu and
-        prices. The site has a Google Map Embed and uses grid layout for the
-        menus for a responsive experience. This site taught me how to include
-        favicons for all browsers. It is hosted on Vercel via CloudFlare and
-        gets a humble 1000 vists a week.
-      </p>
-      <a
-        href="https://www.pearlchina.co.uk/"
-        target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-      >
-        Visit the Site
-        <svg
-          aria-hidden="true"
-          class="w-4 h-4 ml-2 -mr-1"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
-        >
-      </a>
-      <a
-        href="https://github.com/ExpressOwl/PearlChinaV2"
-        target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-      >
-        GitHub Repo
-        <svg
-          aria-hidden="true"
-          class="w-4 h-4 ml-2 -mr-1"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
-        >
-      </a>
+    <div class="flex justify-center mb-4" slot="icon">
+      <Icon class="w-11 h-11 mx-3" name="HTML" />
+      <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
+      <Icon class="w-11 h-11 mx-3" name="Vite" />
     </div>
-  </div>
+    <p class="mb-3 font-normal text-stone-400" slot="description">
+      Client wanted a mobile site to hold their ever updating menu and prices.
+      The site has a Google Map Embed and uses grid layout for the menus for a
+      responsive experience, for all screen sizes. This site taught me how to
+      include favicons for all browsers and how to create UI from a mockup
+      design. It is hosted on Vercel via CloudFlare and gets a humble 1000 vists
+      a week.
+    </p>
+  </Projects>
   <!-- Pearl China -->
 
-  <!-- Blog Site -->
-  <div
-    class="max-w-sm mx-4 mb-4 border rounded-lg shadow bg-gray-800 border-gray-700"
+  <!-- REST API -->
+  <Projects
+    href="https://anime-api-xi.vercel.app/"
+    src="/images/JikanAPI.png"
+    title="Anime (API) Database Search"
+    git="https://github.com/ExpressOwl/animeAPI"
   >
-    <a href="https://seansew.com/" target="_blank">
-      <img class="rounded-t-lg" src="/images/Portfolio.png" alt="" />
-    </a>
-    <div class="p-5">
-      <div class="flex justify-center mb-4">
-        <Icon class="w-11 h-11 mx-3" name="Javascript" />
-        <Icon class="w-11 h-11 mx-3" name="Typescript" />
-        <Icon class="w-11 h-11 mx-3" name="Astro" />
-        <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
-      </div>
-      <a href="https://seansew.com/" target="_blank">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1]">
-          My Portfolio / Blog
-        </h5>
-      </a>
-      <p class="mb-3 font-normal text-stone-400">
-        This portfolio site is made using AstroJS. I learnt the convenience of
-        reuseable components and how folder structure is important in order to
-        make code readable and maintainable. This project also taught me how to
-        use GIT and its version control system, as well as reading of the
-        documentations in order to properly implement dependencies.
-      </p>
-      <a
-        href="https://github.com/ExpressOwl/Ramblings"
-        target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-      >
-        GitHub Repo
-        <svg
-          aria-hidden="true"
-          class="w-4 h-4 ml-2 -mr-1"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
-        >
-      </a>
+    <div class="flex justify-center mb-4" slot="icon">
+      <Icon class="w-11 h-11 mx-3" name="React" />
+      <Icon class="w-11 h-11 mx-3" name="Javascript" />
+      <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
     </div>
-  </div>
-  <!-- Blog Site -->
+    <p class="mb-3 font-normal text-stone-400" slot="description">
+      A React app I made using a REST API called Jikan, containing JSON
+      information about shows from Japan. I utilized the 'useState' hook from
+      React as well as async, fetch, await. Creating a search function parsing
+      through the JSON data, returning 15 related shows, each within a card with
+      their own synopsis and cover image.
+    </p>
+  </Projects>
+  <!-- REST API -->
 
   <!-- Initial Speed -->
-  <div
-    class="max-w-sm mx-4 mb-4 border rounded-lg shadow bg-gray-800 border-gray-700"
+  <Projects
+    href="https://tailwind-website.onrender.com/"
+    src="/images/InitialSpeed.png"
+    title="Initial Speed (Online Business)"
+    git="https://github.com/ExpressOwl/Tailwind"
   >
-    <a href="https://tailwind-website.onrender.com/" target="_blank">
-      <img class="rounded-t-lg" src="/images/InitialSpeed.png" alt="" />
-    </a>
-    <div class="p-5">
-      <div class="flex justify-center mb-4">
-        <Icon class="w-11 h-11 mx-3" name="HTML" />
-        <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
-        <Icon class="w-11 h-11 mx-3" name="Javascript" />
-        <Icon class="w-11 h-11 mx-3" name="Vite" />
-      </div>
-      <a href="https://tailwind-website.onrender.com/" target="_blank">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1]">
-          Initial Speed
-        </h5>
-      </a>
-      <p class="mb-3 font-normal text-stone-400">
-        A Mock up site for my friend's car repair business. It is a one page
-        site and was made with mobile first in mind. I learnt about using lazy
-        loading when using images that are too high quality and how to use CSS
-        animation for a more entertaining user experience. In addition I used
-        Tailwind's inbuilt light/dark mode classes to suit the user's preferred
-        colour scheme.
-      </p>
-      <a
-        href="https://tailwind-website.onrender.com/"
-        target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-      >
-        Visit the Site
-        <svg
-          aria-hidden="true"
-          class="w-4 h-4 ml-2 -mr-1"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
-        >
-      </a>
-      <a
-        href="https://github.com/ExpressOwl/Tailwind"
-        target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-      >
-        GitHub Repo
-        <svg
-          aria-hidden="true"
-          class="w-4 h-4 ml-2 -mr-1"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
-        >
-      </a>
+    <div class="flex justify-center mb-4" slot="icon">
+      <Icon class="w-11 h-11 mx-3" name="HTML" />
+      <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
+      <Icon class="w-11 h-11 mx-3" name="Javascript" />
+      <Icon class="w-11 h-11 mx-3" name="Vite" />
     </div>
-  </div>
+    <p class="mb-3 font-normal text-stone-400" slot="description">
+      A Mock up site for my friend's car repair business. It is a one page site
+      and was made with mobile first in mind. I learnt about using lazy loading
+      when using images that are too high quality and how to use CSS animation
+      for a more entertaining user experience. In addition I used Tailwind's
+      inbuilt light/dark mode classes to suit the user's preferred colour
+      scheme.
+    </p>
+  </Projects>
   <!-- Initial Speed -->
 
   <!-- Tic Tac Toe -->
-  <div
-    class="max-w-sm mx-4 mb-4 border rounded-lg shadow bg-gray-800 border-gray-700"
+  <Projects
+    href="https://tic-tac-toe-eight-pink.vercel.app/"
+    src="/images/TicTacToe.png"
+    title="Tic-Tac-Toe"
+    git="https://github.com/ExpressOwl/Tic-Tac-Toe"
   >
-    <a href="https://tic-tac-toe-eight-pink.vercel.app/" target="_blank">
-      <img class="rounded-t-lg" src="/images/TicTacToe.png" alt="" />
-    </a>
-    <div class="p-5">
-      <div class="flex justify-center mb-4">
-        <Icon class="w-11 h-11 mx-3" name="HTML" />
-        <Icon class="w-11 h-11 mx-3" name="CSS" />
-        <Icon class="w-11 h-11 mx-3" name="Javascript" />
-      </div>
-      <a href="https://tic-tac-toe-eight-pink.vercel.app/" target="_blank">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1]">
-          Tic-Tac-Toe
-        </h5>
-      </a>
-      <p class="mb-3 font-normal text-stone-400">
-        A rite of passage for people learning the core 3 of HTML, CSS and
-        JavaScript. The game was made to utilizes a lot of common methods such
-        as addEventListener(), map(), split() in conjunction with DOM
-        manipulation. I also followed best practices for Web Accessibility, so
-        you can tab through each tile and it will properly focus.
-      </p>
-      <a
-        href="https://tic-tac-toe-eight-pink.vercel.app/"
-        target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-      >
-        Play with a Friend
-        <svg
-          aria-hidden="true"
-          class="w-4 h-4 ml-2 -mr-1"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
-        >
-      </a>
-      <a
-        href="https://github.com/ExpressOwl/Tic-Tac-Toe"
-        target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-      >
-        GitHub Repo
-        <svg
-          aria-hidden="true"
-          class="w-4 h-4 ml-2 -mr-1"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
-        >
-      </a>
+    <div class="flex justify-center mb-4" slot="icon">
+      <Icon class="w-11 h-11 mx-3" name="HTML" />
+      <Icon class="w-11 h-11 mx-3" name="CSS" />
+      <Icon class="w-11 h-11 mx-3" name="Javascript" />
     </div>
-  </div>
+    <p class="mb-3 font-normal text-stone-400" slot="description">
+      A rite of passage for people learning the core 3 of HTML, CSS and
+      JavaScript. The game was made practise fundamentals and as a result
+      contains common methods such as addEventListener(), map() and split(), all
+      used in conjunction with DOM manipulation. I also followed best practices
+      for Web Accessibility, so you can tab through each tile and it will
+      properly focus.
+    </p>
+  </Projects>
   <!-- Tic Tac Toe -->
 
-  <!-- Space Invaders-->
-  <div
-    class="max-w-sm mx-4 mb-4 border rounded-lg shadow bg-gray-800 border-gray-700"
+  <!-- Space Invaders -->
+  <Projects
+    href="https://space-invader.pages.dev/"
+    src="/images/SpaceInvaders.png"
+    title="Space Invaders"
+    git="https://github.com/ExpressOwl/Space-Invader"
   >
-    <a href="https://space-invader.pages.dev/" target="_blank">
-      <img class="rounded-t-lg" src="/images/SpaceInvaders.png" alt="" />
-    </a>
-    <div class="p-5">
-      <div class="flex justify-center mb-4">
-        <Icon class="w-11 h-11 mx-3" name="HTML" />
-        <Icon class="w-11 h-11 mx-3" name="CSS" />
-        <Icon class="w-11 h-11 mx-3" name="Javascript" />
-      </div>
-      <a href="https://space-invader.pages.dev/" target="_blank">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight underline text-[#f1f1f1]">
-          Space Invaders
-        </h5>
-      </a>
-      <p class="mb-3 font-normal text-stone-400">
-        Made a Space Invaders clone using Object Oriented Programming JavaScript
-        with HTML Canvas. This was my first game and it was interesting to learn
-        about collision detection, drawing on the canvas with the context
-        method, and using delta time in conjunction with requestAnimationFrame
-        to ensure the game does not skip frames and unsync the sprites on
-        screen.
-      </p>
-      <a
-        href="https://space-invader.pages.dev/"
-        target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-      >
-        Play the Game
-        <svg
-          aria-hidden="true"
-          class="w-4 h-4 ml-2 -mr-1"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
-        >
-      </a>
-      <a
-        href="https://github.com/ExpressOwl/Space-Invader"
-        target="_blank"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#f1f1f1] rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-      >
-        GitHub Repo
-        <svg
-          aria-hidden="true"
-          class="w-4 h-4 ml-2 -mr-1"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path></svg
-        >
-      </a>
+    <div class="flex justify-center mb-4" slot="icon">
+      <Icon class="w-11 h-11 mx-3" name="HTML" />
+      <Icon class="w-11 h-11 mx-3" name="CSS" />
+      <Icon class="w-11 h-11 mx-3" name="Javascript" />
     </div>
-  </div>
+    <p class="mb-3 font-normal text-stone-400" slot="description">
+      Made a Space Invaders clone using Object Oriented Programming JavaScript
+      with HTML Canvas. This was my first game and it was interesting to learn
+      about collision detection, drawing on the canvas with the context method,
+      and using delta time in conjunction with requestAnimationFrame to ensure
+      the game does not skip frames and unsync the sprites on screen.
+    </p>
+  </Projects>
   <!-- Space Invaders -->
 </div>
-
-<section class="text-black py-4 border-b last:border-t">
-  <div class="text-center">
-    <a
-      href="https://github.com/ExpressOwl"
-      target="_blank"
-      class="inline-block mx-4 px-2 m-auto text-center text-3xl bg-gradient-to-r from-purple-500 to-pink-500 cursor-pointer transition-all hover:shadow-md rounded-lg"
-      >Visit my GitHub for more Projects</a
-    >
-  </div>
-
-  <p class="text-left mx-4">
-    If you visit my GitHub you can see some more projects, such as creating a
-    toast message, making a pomodoro timer and making a ReactJS countdown app.
-  </p>
-</section>
