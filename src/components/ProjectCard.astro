@@ -5,6 +5,43 @@ import { Picture } from "@astrojs/image/components";
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-2 mx-auto place-items-center">
+  <!-- Grand Sorter -->
+  <Projects
+    href="https://grand-sorter.vercel.app/"
+    src="/images/GrandSorter.png"
+    title="Grand Sorter"
+    git="https://github.com/ExpressOwl/Grand-Sorter"
+  >
+    <div class="flex justify-center mb-4" slot="icon">
+      <Icon class="w-11 h-11 mx-3" name="React" />
+      <Icon class="w-11 h-11 mx-3" name="Javascript" />
+      <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
+    </div>
+    <ul
+      class="mb-4 font-normal text-stone-400 list-disc space-y-4"
+      slot="description"
+    >
+      <li>
+        Developed a web application using React.js for comparing prices of items
+        in a game I used to play a lot called Old School Runescape.
+      </li>
+      <li>
+        I implemented component-based architecture, and also used a linter for
+        better code organization and maintainability using Props in React.
+      </li>
+      <li>
+        React Axios was used to manage API calls to fetch data dynamically and
+        update the UI accordingly.
+      </li>
+      <li>
+        This time I added a countdown timer for each round you want to play,
+        providing an engaging user experience. Integrated audio playback for
+        sound effects using the HTML5 Audio API.
+      </li>
+    </ul>
+  </Projects>
+  <!-- Grand Sorter -->
+
   <!-- Hexa-Find -->
   <Projects
     href="https://hexa-find.vercel.app/"
@@ -17,14 +54,24 @@ import { Picture } from "@astrojs/image/components";
       <Icon class="w-11 h-11 mx-3" name="Javascript" />
       <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
     </div>
-    <p class="mb-3 font-normal text-stone-400" slot="description">
-      A React web application that generates a random color and three possible
-      answer choices, and challenges the user to select the correct color.
-      Techniques used in this application include the useState hook to manage
-      state variables, and the useEffect hook to run the generateColor function
-      on mount. The app also employs conditional rendering to display feedback
-      to the user indicating whether they have selected the correct color.
-    </p>
+    <ul
+      class="mb-3 font-normal text-stone-400 list-disc space-y-4"
+      slot="description"
+    >
+      <li>
+        A React web application that generates a random color and three possible
+        answer choices, and challenges the user to select the correct color.
+      </li>
+      <li>
+        Techniques used in this application include the useState hook to manage
+        state variables, and the useEffect hook to run the generateColor
+        function on mount.
+      </li>
+      <li>
+        The app also employs conditional rendering to display feedback to the
+        user indicating whether they have selected the correct color.
+      </li>
+    </ul>
   </Projects>
   <!-- Hexa-Find -->
 
@@ -40,14 +87,24 @@ import { Picture } from "@astrojs/image/components";
       <Icon class="w-11 h-11 mx-3" name="Javascript" />
       <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
     </div>
-    <p class="mb-3 font-normal text-stone-400" slot="description">
-      A game using The Movie Database API where the user guesses the date of the
-      movie shown. The npm package Axios was used to fetch the JSON data. Said
-      JSON data was manipulated by methods such as JSON.stringify, REGEX with
-      replace, LocalStorage, etc, to obtain only what was needed. Common react
-      hooks were utilized in conjunction with LocalStorage to keep track of user
-      lives and score.
-    </p>
+    <ul
+      class="mb-3 font-normal text-stone-400 list-disc space-y-4"
+      slot="description"
+    >
+      <li>
+        A game using The Movie Database API where the user guesses the date of
+        the movie shown.
+      </li>
+      <li>
+        The npm package Axios was used to fetch the JSON data. Said JSON data
+        was manipulated by methods such as JSON.stringify, REGEX with replace,
+        LocalStorage, etc, to obtain only what was needed.
+      </li>
+      <li>
+        Common react hooks were utilized in conjunction with LocalStorage to
+        keep track of user lives and score.
+      </li>
+    </ul>
   </Projects>
   <!-- Timeless Theatre -->
 
@@ -63,14 +120,22 @@ import { Picture } from "@astrojs/image/components";
       <Icon class="w-11 h-11 mx-3" name="Astro" />
       <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
     </div>
-    <p class="mb-3 font-normal text-stone-400" slot="description">
-      This portfolio site is made using AstroJS. Astro Components are similar to
-      React Props and promote reusability and readability. This project taught
-      me how folder structure is important in order to make code maintainable.
-      This project also taught me how to use GIT and its version control system,
-      as well as reading of the documentations in order to properly implement
-      dependencies.
-    </p>
+    <ul
+      class="mb-3 font-normal text-stone-400 list-disc space-y-4"
+      slot="description"
+    >
+      <li>
+        This portfolio site is made using AstroJS. Astro Components are similar
+        to React Props and promote reusability and readability.
+      </li>
+
+      <li>
+        This project taught me how folder structure is important in order to
+        make code maintainable. This project also taught me how to use GIT and
+        its version control system, as well as reading of the documentations in
+        order to properly implement dependencies.
+      </li>
+    </ul>
   </Projects>
   <!-- Ramblings -->
 
@@ -86,14 +151,25 @@ import { Picture } from "@astrojs/image/components";
       <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
       <Icon class="w-11 h-11 mx-3" name="Vite" />
     </div>
-    <p class="mb-3 font-normal text-stone-400" slot="description">
-      Client wanted a mobile site to hold their ever updating menu and prices.
-      The site has a Google Map Embed and uses grid layout for the menus for a
-      responsive experience, for all screen sizes. This site taught me how to
-      include favicons for all browsers and how to create UI from a mockup
-      design. It is hosted on Vercel via CloudFlare and gets a humble 1000 vists
-      a week.
-    </p>
+    <ul
+      class="mb-3 font-normal text-stone-400 list-disc space-y-4"
+      slot="description"
+    >
+      <li>
+        Client wanted a mobile site to hold their ever updating menu and prices.
+        The site has a Google Map Embed and uses grid layout for the menus for a
+        responsive experience, for all screen sizes.
+      </li>
+      <li>
+        This site taught me how to include favicons for all browsers and how to
+        create UI from a mockup design. It is hosted on Vercel via CloudFlare
+        and gets a humble 1000 vists a week.
+      </li>
+      <li>
+        I used proper HTML semantics for Search Engine Optimization (SEO) and it
+        managed to reach the 1st page of Google.
+      </li>
+    </ul>
   </Projects>
   <!-- Pearl China -->
 
@@ -109,13 +185,21 @@ import { Picture } from "@astrojs/image/components";
       <Icon class="w-11 h-11 mx-3" name="Javascript" />
       <Icon class="w-11 h-11 mx-3" name="TailwindCss" />
     </div>
-    <p class="mb-3 font-normal text-stone-400" slot="description">
-      A React app I made using a REST API called Jikan, containing JSON
-      information about shows from Japan. I utilized the 'useState' hook from
-      React as well as async, fetch, await. Creating a search function parsing
-      through the JSON data, returning 15 related shows, each within a card with
-      their own synopsis and cover image.
-    </p>
+    <ul
+      class="mb-3 font-normal text-stone-400 list-disc space-y-4"
+      slot="description"
+    >
+      <li>
+        A React app I made using a REST API called Jikan, containing JSON
+        information about shows from Japan.
+      </li>
+      <li>
+        I utilized the 'useState' hook from React as well as async, fetch,
+        await. Creating a search function parsing through the JSON data,
+        returning 15 related shows, each within a card with their own synopsis
+        and cover image.
+      </li>
+    </ul>
   </Projects>
   <!-- REST API -->
 
@@ -132,14 +216,24 @@ import { Picture } from "@astrojs/image/components";
       <Icon class="w-11 h-11 mx-3" name="Javascript" />
       <Icon class="w-11 h-11 mx-3" name="Vite" />
     </div>
-    <p class="mb-3 font-normal text-stone-400" slot="description">
-      A Mock up site for my friend's car repair business. It is a one page site
-      and was made with mobile first in mind. I learnt about using lazy loading
-      when using images that are too high quality and how to use CSS animation
-      for a more entertaining user experience. In addition I used Tailwind's
-      inbuilt light/dark mode classes to suit the user's preferred colour
-      scheme.
-    </p>
+    <ul
+      class="mb-3 font-normal text-stone-400 list-disc space-y-4"
+      slot="description"
+    >
+      <li>
+        A Mock up site for my friend's car repair business. It is a one page
+        site and was made with mobile first in mind.
+      </li>
+      <li>
+        I learnt about using lazy loading when using images that are too high
+        quality and how to use CSS animation for a more entertaining user
+        experience.
+      </li>
+      <li>
+        I used Tailwind's inbuilt light/dark mode classes to suit the user's
+        preferred colour scheme.
+      </li>
+    </ul>
   </Projects>
   <!-- Initial Speed -->
 
@@ -155,14 +249,24 @@ import { Picture } from "@astrojs/image/components";
       <Icon class="w-11 h-11 mx-3" name="CSS" />
       <Icon class="w-11 h-11 mx-3" name="Javascript" />
     </div>
-    <p class="mb-3 font-normal text-stone-400" slot="description">
-      A rite of passage for people learning the core 3 of HTML, CSS and
-      JavaScript. The game was made practise fundamentals and as a result
-      contains common methods such as addEventListener(), map() and split(), all
-      used in conjunction with DOM manipulation. I also followed best practices
-      for Web Accessibility, so you can tab through each tile and it will
-      properly focus.
-    </p>
+    <ul
+      class="mb-3 font-normal text-stone-400 list-disc space-y-4"
+      slot="description"
+    >
+      <li>
+        A rite of passage for people learning the core 3 of HTML, CSS and
+        JavaScript.
+      </li>
+      <li>
+        The game was made practise fundamentals and as a result contains common
+        methods such as addEventListener(), map() and split(), all used in
+        conjunction with DOM manipulation.
+      </li>
+      <li>
+        I also followed best practices for Web Accessibility, so you can tab
+        through each tile and it will properly focus.
+      </li>
+    </ul>
   </Projects>
   <!-- Tic Tac Toe -->
 
@@ -178,13 +282,24 @@ import { Picture } from "@astrojs/image/components";
       <Icon class="w-11 h-11 mx-3" name="CSS" />
       <Icon class="w-11 h-11 mx-3" name="Javascript" />
     </div>
-    <p class="mb-3 font-normal text-stone-400" slot="description">
-      Made a Space Invaders clone using Object Oriented Programming JavaScript
-      with HTML Canvas. This was my first game and it was interesting to learn
-      about collision detection, drawing on the canvas with the context method,
-      and using delta time in conjunction with requestAnimationFrame to ensure
-      the game does not skip frames and unsync the sprites on screen.
-    </p>
+    <ul
+      class="mb-3 font-normal text-stone-400 list-disc space-y-4"
+      slot="description"
+    >
+      <li>
+        Made a Space Invaders clone using Object Oriented Programming JavaScript
+        with HTML Canvas.
+      </li>
+      <li>
+        This was my first game and it was interesting to learn about collision
+        detection, and how interaction on the canvas works.
+      </li>
+      <li>
+        Learnt how to draw on the canvas with the context method, and using
+        delta time in conjunction with requestAnimationFrame to ensure the game
+        does not skip frames and unsync the sprites on screen.
+      </li>
+    </ul>
   </Projects>
   <!-- Space Invaders -->
 </div>

@@ -52,12 +52,12 @@ const skillSet = [
   <div class="prose mx-4 text-[#0f0f0f]">
     <h2 class="underline text-[#0f0f0f]">About Me</h2>
     <p class="text-lg font-bold">
-      My name is Sean and I love building sites from the ground up because you
-      get to see the progress made with each line of code written, and it feels
-      very gratifying to slowly piece together a project. <br /> I value responsive
-      and engaging user experiences, hence creating sites using React, and following
-      a mobile first approach with TailwindCSS. I also unit test my JavaScript with
-      Jest if needed.
+      Front-end developer with expertise in React.js and component-based
+      architecture. I am familiar with building dynamic and responsive web
+      applications and UI with a focus on user experience. Proficient in
+      utilizing various libraries and tools to enhance functionality and deliver
+      high-quality code. Strong problem-solving skills and ability to
+      collaborate effectively in a team environment.
     </p>
     <div class="text-center mb-4">
       {
@@ -68,7 +68,7 @@ const skillSet = [
               target="_blank"
               class="text-[#f1f1f1] bg-[#24292F] focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center focus:ring-gray-500 hover:bg-[#050708]/30 mr-2 mb-2"
             >
-              <Icon name={item.name} class="w-4 h-4 mr-2 -ml-1" />
+              <Icon name={item.name} class="w-4 h-4 mr-2 -ml-1 animate-bounce" />
               {item.text} {item.name}!
             </a>
           </>
@@ -76,12 +76,26 @@ const skillSet = [
       }
     </div>
     <h2 class="prose text-xl underline">
-      Techstack: <div class="flex flex-wrap mt-4 text-[#0f0f0f]">
-        {
-          skillSet.map((skill) => (
-            <Icon class="w-11 h-11 mx-4 my-2" name={skill.name} />
-          ))
-        }
+      Programming Languages: <div class="flex flex-wrap mt-4 text-[#0f0f0f]">
+        <Icon class="w-11 h-11 mx-4 my-2" name="HTML" />
+        <Icon class="w-11 h-11 mx-4 my-2" name="CSS" />
+        <Icon class="w-11 h-11 mx-4 my-2" name="Javascript" />
+      </div>
+    </h2>
+    <h2 class="prose text-xl underline">
+      Frameworks/Libraries: <div class="flex flex-wrap mt-4 text-[#0f0f0f]">
+        <Icon class="w-11 h-11 mx-4 my-2" name="React" />
+        <Icon class="w-11 h-11 mx-4 my-2" name="Astro" />
+        <Icon class="w-11 h-11 mx-4 my-2" name="TailwindCss" />
+        <Icon class="w-11 h-11 mx-4 my-2" name="axios" />
+      </div>
+    </h2>
+    <h2 class="prose text-xl underline">
+      Tools/Utilities: <div class="flex flex-wrap mt-4 text-[#0f0f0f]">
+        <Icon class="w-11 h-11 mx-4 my-2" name="GitHub" />
+        <Icon class="w-11 h-11 mx-4 my-2" name="Vite" />
+        <Icon class="w-11 h-11 mx-4 my-2" name="npm" />
+        <Icon class="w-11 h-11 mx-4 my-2" name="prettier" />
       </div>
     </h2>
   </div>
